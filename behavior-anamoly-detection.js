@@ -15,6 +15,8 @@ const NORMAL_THRESHOLD = {
   typingSpeed: 150, // Expected typing speed (characters per minute)
 };
 
+
+
 // Function to calculate anomaly score
 const calculateAnomalyScore = (behavior) => {
   let score = 0;

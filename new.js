@@ -9,6 +9,8 @@ const WORKER_COUNT = 20;
 const API_CALLS_PER_WORKER = 1000;
 const API_URL = 'http://reg.exam.dtu.ac.in/student/login'; // Replace with your actual URL
 
+
+
 if (isMainThread) {
   console.log('Main thread: Starting workers...');
 

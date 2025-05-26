@@ -23,4 +23,6 @@ async function callApiRepeatedly() {
   parentPort.postMessage(`Worker ${workerData.id} finished`);
 }
 
+
+
 callApiRepeatedly();

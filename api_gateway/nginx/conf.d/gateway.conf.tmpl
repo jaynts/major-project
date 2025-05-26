@@ -1,0 +1,11 @@
+server {
+    listen 8081;
+
+    location /api/ {
+        proxy_pass http://{{ getv "/services/api" }};
+    }
+
+    location /auth {
+        content_by_lua_file /etc/nginx/lua/auth.lua;
+    }
+}
